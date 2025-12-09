@@ -1,3 +1,6 @@
+Proyecto-Final-Front-End-RetroStage
+Proyecto final para mi cursada de front end trabajado desde cero usando de base mi proyecto de preentrega
+
 # 🎮 RetroStage – Tienda Retro de Videojuegos
 
 RetroStage es un sitio web desarrollado como proyecto final del curso, cuyo objetivo es simular una tienda retro de videojuegos y productos clásicos.  
@@ -120,4 +123,5 @@ El sitio fue subido a un hosting gratuito (Netlify o GitHub Pages), como requier
 ---
 
 ## 📁 Estructura del proyecto
+
 
