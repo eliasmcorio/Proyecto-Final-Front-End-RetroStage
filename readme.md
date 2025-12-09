@@ -120,8 +120,7 @@ El sitio fue subido a un hosting gratuito (Netlify o GitHub Pages), como requier
 
 (URL a agregar)
 
----
 
-## 📁 Estructura del proyecto
+
 
 
