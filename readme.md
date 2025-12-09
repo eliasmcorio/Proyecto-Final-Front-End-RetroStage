@@ -111,7 +111,7 @@ El sitio integra:
 
 - Imágenes pixeladas  
 - Animaciones retro  
-- Un video con efecto holográfico (extra)
+- Un video con efecto holográfico extra adicionado gracias a mi amigo matias beja (el jujeño) diseñador 3d por aportarlo
 
 ---
 
@@ -119,6 +119,7 @@ El sitio integra:
 El sitio fue subido a un hosting gratuito (Netlify o GitHub Pages), como requiere la consigna.
 
 (https://eliasmcorio.github.io/Proyecto-Final-Front-End-RetroStage/)
+
 
 
 
