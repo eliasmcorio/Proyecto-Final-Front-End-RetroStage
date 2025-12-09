@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "titulo": "The Legend of Zelda",
+    "desc": "Aventura clásica en un mundo de exploración retro.",
+    "precio": 39.99,
+    "imagen": "img/link.png"
+  },
+  {
+    "id": 2,
+    "titulo": "Super Mario Bros",
+    "desc": "El clásico de plataformas más famoso del mundo.",
+    "precio": 29.99,
+    "imagen": "img/mario.png"
+  },
+  {
+    "id": 3,
+    "titulo": "Sonic the Hedgehog",
+    "desc": "Velocidad retro pura en zonas llenas de acción.",
+    "precio": 34.99,
+    "imagen": "img/sonic.png"
+  },
+  {
+    "id": 4,
+    "titulo": "Mega Man",
+    "desc": "Acción 8 bits derrotando a los Robot Masters.",
+    "precio": 32.99,
+    "imagen": "img/megaman.png"
+  },
+  {
+    "id": 5,
+    "titulo": "Joystick Retro USB",
+    "desc": "Joystick estilo arcade compatible con PC y consolas retro.",
+    "precio": 19.99,
+    "imagen": "img/joystick.png"
+  },
+  {
+    "id": 6,
+    "titulo": "Sega Genesis (Consola)",
+    "desc": "Consola clásica de SEGA.",
+    "precio": 49.99,
+    "imagen": "img/genesis.png"
+  },
+  {
+    "id": 7,
+    "titulo": "Super Nintendo (SNES)",
+    "desc": "Leyenda de Nintendo en 16 bits.",
+    "precio": 44.99,
+    "imagen": "img/snes.png"
+  },
+  {
+    "id": 8,
+    "titulo": "NES (Consola)",
+    "desc": "La consola que inició la revolución.",
+    "precio": 39.99,
+    "imagen": "img/nes.png"
+  }
+]

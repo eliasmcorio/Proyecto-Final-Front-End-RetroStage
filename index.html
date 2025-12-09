@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RetroStage - Mundo Retro Arcade</title>
+  <meta name="description" content="RetroStage: portal de juegos retro en 8 bits. Catálogo, carrito persistente y contacto." />
+  <meta name="keywords" content="RetroStage, retro, 8bit, arcade, juegos" />
+
+  <!-- Google Font 8-bit -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <!-- Bootstrap (utilidades / grid) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Tu CSS (retro) -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="crt">
+
+  <a class="sr-only-focusable" href="#main">Saltar al contenido</a>
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="brand d-flex flex-column">
+        <div class="logo" aria-hidden="true">RetroStage</div>
+        <div class="site-title">Arcade · 8-bit · Classics</div>
+      </div>
+
+      <nav class="main-nav" role="navigation" aria-label="Navegación principal">
+        <ul class="nav-list d-flex gap-2 mb-0">
+          <li><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li><a class="nav-link" href="#catalogo">Catálogo</a></li>
+          <li><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="cart-area">
+        <button id="btnCart" class="btn btn-8bit" aria-haspopup="dialog" aria-controls="cart-modal" aria-expanded="false">
+          🛒 <span id="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main id="main" tabindex="-1">
+    <!-- HERO -->
+    <section id="inicio" class="hero text-center py-5" role="region" aria-label="Inicio">
+      <div class="container">
+        <h1 class="hero-title glitch" data-text="Bienvenido a RetroStage">Bienvenido a RetroStage</h1>
+        <p class="hero-subtitle lead">Tu portal arcade en 8 bits</p>
+        <a class="btn-8bit" href="#catalogo">Ver Juegos</a>
+      </div>
+    </section>
+
+    <!-- CATALOGO -->
+    <section id="catalogo" class="catalogo py-5" role="region" aria-label="Catálogo de juegos">
+      <div class="container">
+        <h2 class="section-title pixel-shadow">Catálogo Retro</h2>
+        <!-- contenedor donde script inyecta cards -->
+        <div id="productos" class="grid-productos" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- RESEÑAS -->
+    <section id="reseñas" class="bg-dark-section py-4" role="region" aria-label="Reseñas">
+      <div class="container">
+        <h2 class="section-title">Reseñas</h2>
+        <div class="reviews-grid" id="reviews-grid" aria-hidden="false"></div>
+      </div>
+    </section>
+
+    <!-- MULTIMEDIA -->
+    <section id="presentacion">
+        <h2 class="section-title">Presentación</h2>
+
+        <div class="video3d-container">
+            <video src="img/jim3d.mp4" autoplay muted loop playsinline></video>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto py-5" role="region" aria-label="Formulario de contacto">
+      <div class="container">
+        <h2 class="section-title">Contacto</h2>
+
+        <!-- Formspree: reemplazar YOUR_FORM_ID por el tuyo -->
+        <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="formulario" novalidate>
+          <div class="mb-3">
+            <label for="name" class="form-label">Nombre</label>
+            <input id="name" name="name" type="text" class="form-control" placeholder="Tu nombre" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input id="email" name="email" type="email" class="form-control" placeholder="email@ejemplo.com" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label">Mensaje</label>
+            <textarea id="message" name="message" rows="4" class="form-control" placeholder="Escribe tu mensaje..." required></textarea>
+          </div>
+
+          <button class="btn-8bit" type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer py-3" role="contentinfo">
+    <div class="container text-center">
+      <p>© <span id="year"></span> RetroStage · Arcade Experience</p>
+    </div>
+  </footer>
+
+  <!-- CART MODAL (unificado) -->
+  <div id="cart-modal" class="modal-overlay oculto" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+  <div class="modal cart-panel" role="document">
+    <header class="modal-header d-flex justify-content-between align-items-center">
+      <h3 id="cart-title">🛒 Tu Carrito</h3>
+      <button id="close-cart" class="close-btn" aria-label="Cerrar carrito">X</button>
+    </header>
+
+    <div id="cart-items" class="cart-items" tabindex="0" aria-live="polite"></div>
+
+    <div class="cart-footer d-flex justify-content-between align-items-center mt-3">
+      <div>Total: $<span id="cart-total">0.00</span></div>
+      <div>
+        <button id="checkout" class="btn-8bit verde">Simular Compra</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- SCRIPTS -->
+  <script src="script.js" defer></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+</body>
+</html>
