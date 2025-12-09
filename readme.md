@@ -118,7 +118,8 @@ El sitio integra:
 ### ✔ 9. Hosting del proyecto
 El sitio fue subido a un hosting gratuito (Netlify o GitHub Pages), como requiere la consigna.
 
-(URL a agregar)
+(https://eliasmcorio.github.io/Proyecto-Final-Front-End-RetroStage/)
+
 
 
 
