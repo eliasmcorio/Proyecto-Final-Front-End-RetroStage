@@ -22,11 +22,29 @@ body{
 .sr-only-focusable:focus{position:static}
 
 /* Header */
-.site-header{background:#111;border-bottom:4px solid var(--accent);padding:12px 0}
-.brand .logo{font-size:18px;color:var(--accent);letter-spacing:1px}
-.site-title{font-size:10px;color:var(--muted);margin-top:2px}
-.nav-list{list-style:none;margin:0;padding:0;display:flex;gap:8px;align-items:center}
-.nav-link{color:var(--accent);text-decoration:none;padding:6px;border-radius:4px}
+.site-header{
+  background:#111;
+  border-bottom:4px solid var(--accent);
+  padding:12px 0}
+.brand .logo{
+  font-size:18px;
+  color:var(--accent);
+  letter-spacing:1px}
+.site-title{
+  font-size:10px;
+  color:var(--muted);
+  margin-top:2px}
+.nav-list{
+  list-style:none;
+  margin:0;padding:0;
+  display:flex;
+  gap:8px;
+  align-items:center}
+.nav-link{
+  color:var(--accent);
+  text-decoration:none;
+  padding:6px;
+  border-radius:4px}
 .nav-link:focus, .nav-link:hover{background:#101419;outline:3px solid rgba(0,230,255,0.12);}
 
 /* Hero */
@@ -61,13 +79,13 @@ body{
 
 /* Modal / Cart */
 .modal-overlay{
-  position:fixed;
-  inset:0;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  background:rgba(0,0,0,0.85);
-  z-index:2000}
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.85);
+  z-index: 2000}
 
 .oculto{display:none}
 .cart-panel{background:#111;border:6px solid var(--accent);padding:12px;width:360px;max-width:95%}
@@ -160,6 +178,7 @@ button:focus,a:focus,input:focus,textarea:focus{outline:3px solid rgba(0,230,255
   );
   animation: holo-sweep 2s ease-in-out infinite;
 }
+
 
 
 
